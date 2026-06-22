@@ -1,0 +1,44 @@
+{
+    "model_name": "Yogyank Safe Baseline",
+    "target": "target_entitlement_score",
+    "random_state": 42,
+    "features": [
+        "application_year",
+        "district",
+        "land_area_acres",
+        "crop_type",
+        "pm_kisan_status",
+        "historical_repayment_score",
+        "irrigation_type",
+        "land_ownership",
+        "soil_type",
+        "sales_channel",
+        "annual_income_inr",
+        "liability_ratio_pct",
+        "rainfall_deviation_pct",
+        "ndvi_score"
+    ],
+    "removed_leakage_features": [
+        "defaulted_in_next_12_months",
+        "farmer_id"
+    ],
+    "numeric_features": [
+        "application_year",
+        "land_area_acres",
+        "historical_repayment_score",
+        "annual_income_inr",
+        "liability_ratio_pct",
+        "rainfall_deviation_pct",
+        "ndvi_score"
+    ],
+    "categorical_features": [
+        "district",
+        "crop_type",
+        "pm_kisan_status",
+        "irrigation_type",
+        "land_ownership",
+        "soil_type",
+        "sales_channel"
+    ],
+    "validation_strategy": "Temporal Split"
+}
